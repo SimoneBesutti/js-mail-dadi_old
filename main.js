@@ -11,13 +11,13 @@ document.getElementById("mioId").innerHTML = email;
 elencoEmail = ["nome1@gmail.com", "nome2@gmail.com", "nome3@gmail.com", email];
 Messaggio = "Fanculo sei nell'elenco"
 
-
-//Stampare un messaggio appropriato
-controlloemail = elencoEmail.includes("email");
-
-for (i = 0; i < elencoEmail.length; i++){
-    document.writeln((i+1) + "; " + elencoEmail[i]);
+//Stampare un essaggio appropriato
+for (var i = 0; i < elencoEmail.length; i++){
+    if (elencoEmail[i] ==email) 
+    console.log(elencoEmail[i]);
 }
-/*if (email ){
-    document.getElementById("mioId").innerHTML = Messaggio;
+
+
+/*for (i = 0; i < elencoEmail.length; i++){
+    document.writeln((i+1) + "; " + elencoEmail[i]);
 }*/
